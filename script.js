@@ -158,7 +158,7 @@ function openProductModal(id) {
 
   document.getElementById('buyWhatsApp').addEventListener('click', () => {
     const msg = `Olá! Tenho interesse em ${product.name} (R$ ${product.price.toFixed(2)})`;
-    window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/5511996630282?text=${encodeURIComponent(msg)}`, '_blank');
   });
 
   document.getElementById('addFromModal').addEventListener('click', () => {
@@ -194,7 +194,7 @@ checkoutBtn.addEventListener('click', () => {
   const items = cart.map(i => `${i.name} (${i.quantity})`).join(', ');
   const total = cart.reduce((acc, i) => acc + (i.price * i.quantity), 0).toFixed(2);
   const msg = `Olá! Quero finalizar compra: ${items}. Total: R$ ${total}`;
-  window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/5511996630282?text=${encodeURIComponent(msg)}`, '_blank');
   closeCartSidebar();
 });
 
@@ -280,7 +280,7 @@ contactForm.addEventListener('submit', (e) => {
   }
 
   const whatsappMsg = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${msg}`;
-  window.open(`https://wa.me/5511999999999?text=${whatsappMsg}`, '_blank');
+  window.open(`https://wa.me/5511996630282?text=${whatsappMsg}`, '_blank');
   contactForm.reset();
 });
 
